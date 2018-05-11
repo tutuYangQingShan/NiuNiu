@@ -1,0 +1,6 @@
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\TestDll\bin\Debug\TestDll.dll
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\TestDll\bin\Debug\TestDll.pdb
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\TestDll\obj\Debug\TestDll.csprojResolveAssemblyReference.cache
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\TestDll\obj\Debug\TestDll.csproj.CoreCompileInputs.cache
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\TestDll\obj\Debug\TestDll.dll
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\TestDll\obj\Debug\TestDll.pdb

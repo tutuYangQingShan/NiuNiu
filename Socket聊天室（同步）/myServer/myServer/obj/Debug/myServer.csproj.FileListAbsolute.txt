@@ -1,0 +1,95 @@
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myServer\myServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myServer\myServer\obj\Debug\myServer.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myServer\myServer\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myServer\myServer\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myServer\myServer\bin\Debug\myServer.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myServer\myServer\bin\Debug\myServer.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myServer\myServer\bin\Debug\myServer.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myServer\myServer\obj\Debug\myServer.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myServer\myServer\obj\Debug\myServer.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\bin\Debug\myServer.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\bin\Debug\myServer.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\bin\Debug\myServer.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\myServer.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\myServer.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\myServer.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\myServer.csprojResolveAssemblyReference.cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\myServer.MainForm.resources
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\myServer.csproj.GenerateResource.Cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\myServer.exe
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\bin\Debug\myServer.exe.config
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\bin\Debug\myServer.exe
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\bin\Debug\myServer.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\obj\Debug\myServer.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\bin\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myServer\myServer\bin\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myServer\myServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myServer\myServer\obj\Debug\myServer.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myServer\myServer\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myServer\myServer\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myServer\myServer\obj\Debug\myServer.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myServer\myServer\obj\Debug\myServer.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myServer\myServer\bin\Debug\myServer.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myServer\myServer\bin\Debug\myServer.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myServer\myServer\bin\Debug\myServer.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myServer\myServer\bin\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myServer\myServer\bin\Debug\myServer.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myServer\myServer\bin\Debug\myServer.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myServer\myServer\bin\Debug\myServer.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myServer\myServer\bin\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myServer\myServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myServer\myServer\obj\Debug\myServer.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myServer\myServer\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myServer\myServer\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myServer\myServer\obj\Debug\myServer.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myServer\myServer\obj\Debug\myServer.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.exe.config
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.exe
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\bin\Debug\Protocol.dll
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.csprojResolveAssemblyReference.cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.MainForm.resources
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.csproj.GenerateResource.Cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.exe
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\bin\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.pdb
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.exe.config
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.exe
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.pdb
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.exe
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.pdb
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myServer\myServer\bin\Debug\Protocol.dll
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.MainForm.resources
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.csproj.GenerateResource.Cache
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.exe.config
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.exe
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.pdb
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.exe
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.pdb
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myServer\myServer\bin\Debug\Protocol.dll
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.MainForm.resources
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.csproj.GenerateResource.Cache
+D:\杨青山\资料代码\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.exe.config
+D:\杨青山\资料代码\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.exe
+D:\杨青山\资料代码\Socket聊天室（同步）\myServer\myServer\bin\Debug\myServer.pdb
+D:\杨青山\资料代码\Socket聊天室（同步）\myServer\myServer\bin\Debug\Protocol.dll
+D:\杨青山\资料代码\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.csprojResolveAssemblyReference.cache
+D:\杨青山\资料代码\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.MainForm.resources
+D:\杨青山\资料代码\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.csproj.GenerateResource.Cache
+D:\杨青山\资料代码\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.csproj.CoreCompileInputs.cache
+D:\杨青山\资料代码\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.exe
+D:\杨青山\资料代码\Socket聊天室（同步）\myServer\myServer\obj\Debug\myServer.pdb

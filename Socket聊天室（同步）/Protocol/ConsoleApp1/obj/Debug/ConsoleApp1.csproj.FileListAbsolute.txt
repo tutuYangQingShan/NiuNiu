@@ -1,0 +1,7 @@
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

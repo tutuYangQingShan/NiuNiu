@@ -1,0 +1,7 @@
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\delegateTest\bin\Debug\delegateTest.exe.config
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\delegateTest\bin\Debug\delegateTest.exe
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\delegateTest\bin\Debug\delegateTest.pdb
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\delegateTest\obj\Debug\delegateTest.csprojResolveAssemblyReference.cache
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\delegateTest\obj\Debug\delegateTest.csproj.CoreCompileInputs.cache
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\delegateTest\obj\Debug\delegateTest.exe
+D:\杨青山\资料代码\Socket聊天室（同步）\Protocol\delegateTest\obj\Debug\delegateTest.pdb

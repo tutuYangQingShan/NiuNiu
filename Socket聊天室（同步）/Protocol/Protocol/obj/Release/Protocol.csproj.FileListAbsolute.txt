@@ -1,0 +1,6 @@
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\bin\Release\Protocol.dll
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\obj\Release\Protocol.csprojResolveAssemblyReference.cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\obj\Release\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\bin\Release\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\obj\Release\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\obj\Release\Protocol.dll

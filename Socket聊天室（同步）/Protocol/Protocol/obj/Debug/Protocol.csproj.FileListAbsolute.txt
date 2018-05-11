@@ -1,0 +1,20 @@
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\bin\Debug\Protocol.dll
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\bin\Debug\Protocol.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\obj\Debug\Protocol.csprojResolveAssemblyReference.cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\obj\Debug\Protocol.dll
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\obj\Debug\Protocol.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\bin\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\bin\Debug\Protocol.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\obj\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\Protocol\Protocol\obj\Debug\Protocol.pdb
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\Protocol\Protocol\bin\Debug\Protocol.dll
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\Protocol\Protocol\bin\Debug\Protocol.pdb
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\Protocol\Protocol\obj\Debug\Protocol.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\Protocol\Protocol\obj\Debug\Protocol.dll
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\Protocol\Protocol\obj\Debug\Protocol.pdb
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\Protocol\Protocol\bin\Debug\Protocol.dll
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\Protocol\Protocol\bin\Debug\Protocol.pdb
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\Protocol\Protocol\obj\Debug\Protocol.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\Protocol\Protocol\obj\Debug\Protocol.dll
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\Protocol\Protocol\obj\Debug\Protocol.pdb

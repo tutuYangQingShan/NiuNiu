@@ -1,0 +1,122 @@
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myClient\myClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myClient\myClient\obj\Debug\myClient.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myClient\myClient\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myClient\myClient\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myClient\myClient\bin\Debug\myClient.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myClient\myClient\bin\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myClient\myClient\bin\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myClient\myClient\obj\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\新建文件夹\myClient\myClient\obj\Debug\myClient.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\myClient.csprojResolveAssemblyReference.cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\myClient.MainForm.resources
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\myClient.csproj.GenerateResource.Cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\myClient.exe
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\bin\Debug\myClient.exe.config
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\bin\Debug\myClient.exe
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\bin\Debug\myClient.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\myClient.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\bin\Debug\myClient.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\bin\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\bin\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\bin\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient\myClient\obj\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\myClient.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\myClient.LoginForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\bin\Debug\myClient.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\bin\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\bin\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\bin\Debug\Protocol.dll
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\bin\Debug\myClient.exe.config
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\bin\Debug\myClient.exe
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\bin\Debug\myClient.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\bin\Debug\Protocol.dll
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\myClient.csprojResolveAssemblyReference.cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\myClient.LoginForm.resources
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\myClient.MainForm.resources
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\myClient.csproj.GenerateResource.Cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\myClient.exe
+F:\编程资料\Sharp代码\winForm程序\Socket通信\一对多异步Socket通信\myClient02\myClient\obj\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\obj\Debug\myClient.LoginForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\obj\Debug\myClient.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\obj\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\bin\Debug\myClient.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\bin\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\bin\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\bin\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室\myClient\myClient\obj\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\bin\Debug\myClient.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\bin\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\bin\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\bin\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\obj\Debug\myClient.LoginForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\obj\Debug\myClient.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\obj\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室2\myClient\myClient\obj\Debug\myClient.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.LoginForm.resources
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.MainForm.resources
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.csproj.GenerateResource.Cache
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.exe
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.exe.config
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.exe
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.pdb
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\bin\Debug\Protocol.dll
+F:\编程资料\Sharp代码\winForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.csprojResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.exe.config
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.pdb
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\bin\Debug\Protocol.dll
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.LoginForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.MainForm.resources
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\GenerateResource.read.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\GenerateResource.write.1.tlog
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.exe
+D:\Program Files\Sharp\WinForm程序\Socket通信\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.pdb
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.exe.config
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.exe
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.pdb
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.exe
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.pdb
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myClient\myClient\bin\Debug\Protocol.dll
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.LoginForm.resources
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.MainForm.resources
+C:\Users\lenovo\Desktop\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.csproj.GenerateResource.Cache
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.exe.config
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.exe
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.pdb
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.exe
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.pdb
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myClient\myClient\bin\Debug\Protocol.dll
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.LoginForm.resources
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.MainForm.resources
+C:\Users\lenovo\Desktop\文件\项目实例\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.csproj.GenerateResource.Cache
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.exe.config
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.exe
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\bin\Debug\myClient.pdb
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\bin\Debug\Protocol.dll
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.csprojResolveAssemblyReference.cache
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.LoginForm.resources
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.MainForm.resources
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.csproj.GenerateResource.Cache
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.csproj.CoreCompileInputs.cache
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.exe
+D:\杨青山\资料代码\Socket聊天室（同步）\myClient\myClient\obj\Debug\myClient.pdb
