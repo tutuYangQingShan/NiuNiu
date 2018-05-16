@@ -1,0 +1,261 @@
+异步调用是CLR为开发者提供的一种重要的编程手段，它也是构建高性能、可伸缩应用程序的关键。在多核CPU越来越普及的今天，异步编程允许使用非常少的线程执行很多操作。我们通常使用异步完成许多计算型、IO型的复杂、耗时操作，去取得我们的应用程序运行所需要的一部分数据。在取得这些数据后，我们需要将它们绑定在UI中呈现。当数据量偏大时，我们会发现窗体变成了空白面板。此时如果用鼠标点击，窗体标题将会出现”失去响应”的字样，而实际上UI线程仍在工作着，这对用户来说是一种极度糟糕的体验。如果你希望了解其中的原因(并不复杂:))，并彻底解决该问题，那么花时间读完此文也许是个不错的选择。
+
+　　一般来说，窗体阻塞分为两种情况。一种是在UI线程上调用耗时较长的操作，例如访问数据库，这种阻塞是UI线程被占用所导致，可以通过delegate.BeginInvoke的异步编程解决；另一种是窗体加载大批量数据，例如向ListView、DataGridView等控件中添加大量的数据。本文主要探讨后一种阻塞。
+
+基础理论
+
+　　这部分简单介绍CLR对跨线程UI访问的处理。作为基础内容，相信大部分.NET开发者对它并不陌生，读者可根据实际情况略过此处。
+
+控件的线程安全检测
+
+　　在传统的窗体编程中，UI中的控件元素与其他工作线程互相隔离，每次我们访问一个UI控件，实际上都是在UI线程中进行。如果尝试在其他线程中访问控件，CLR针对不同的.NET Framework版本，会有不同的处理。在Framework1.x中，CLR允许应用程序以跨线程的方式运行，而在Framework2.0及以后版本中，System.Windows.Form.Control新增了CheckForIllegalCrossThreadCalls属性，它是一个可读写的bool常量，标记我们是否需要对非UI线程对控件的调用做出检测。如果指定true，当以其他线程访问UI，CLR会跑出一个”InvalidOperationException:线程间操作无效，从不是创建控件***的线程访问它”；如果为false，则不对该错误线程的调用进行捕获，应用程序依然运行。
+
+　　在Framework1.x版本中，这个值默认是false。问什么之后的版本会加入这个属性来约束我们的UI呢？实际上官方对此的解释是当有多个并发线程尝试对UI进行读写时，容易造成线程争用资源带来的死锁。所以，CLR默认不允许以非UI线程访问控件。
+
+　　然而，我们常常需要在窗体中使用异步线程来处理一些操作，例如IO和Socket通讯等。这时跨线程的UI访问又是必须的，对此，.NET给我们的补充方案就是Control的Invoke和BeginInvoke。
+
+Control的Invoke和BeginInvoke
+
+对于这两个方法，首先我们要有以下的认识：
+
+1.Control.Invoke，Control.BeginInvoke和delegate.Invoke，delegate.BeginInvoke是不同的。
+2.Control.Invoke中的委托方法，执行在主线程，也就是我们的UI线程。而Control.BeginInvoke从命名上来看虽然具有异步调用的特征(Begin)，但也仍然执行在UI线程。
+3.如果在UI线程中直接调用Invoke和BeginInvoke，数据量偏大时，依然会造成UI的假死。
+
+　　有很多开发者在初次接触这两个函数时，很容易就将它们同异步联系起来、有些人会认为他们是独立于UI线程之外的工作线程，实际上，他们都被这两个函数的命名所蒙蔽了。如果以传统调用异步的方式，直接调用Control.BeginInvoke，与同步函数的执行无异，UI线程还是会处理所有辛苦的操作，造成我们的应用程序阻塞。
+
+　　Control.Invoke的调用模型很明确：在UI线程中以代码顺序同步执行，因此，抛开工作线程调用UI元素的干扰，我们可以将Control.Invoke视为同步，本文不做过多介绍。
+
+　　很多开发者在接触异步后，再来处理窗体假死的问题，很容易想当然的将Control.BeginInvoke视为WinForm封装的异步。所以我们重点关注这个方法。
+体验BeginInvoke
+
+　　前面说过，BeginInvoke除了命名上来看像异步，其实很多时候我们调用起来根本没有异步的”非阻塞”特性，我用下面这个例子简单的尝试一次对BeginInvoke的调用。
+
+　　如你所见，我现在创建了一个简陋的Form，其中放置了一个Lable控件lable1,一个Button控件btn_Start，下面，开始code:
+
+private void btn_Start_Click(object sender, EventArgs e)
+{
+// 储存UI线程的标识符
+int curThreadID = Thread.CurrentThread.ManagedThreadId;
+
+new Thread((ThreadStart)delegate()
+{
+PrintThreadLog(curThreadID);
+})
+.Start();
+}
+
+private void PrintThreadLog(int mainThreadID)
+{
+// 当前线程的标识符
+// A代码块
+int asyncThreadID = Thread.CurrentThread.ManagedThreadId;
+
+// 输出当前线程的扼要信息，及与UI线程的引用比对结果
+// B代码块
+label1.BeginInvoke((MethodInvoker)delegate()
+{
+// 执行BeginInvoke内的方法的线程标识符
+int curThreadID = Thread.CurrentThread.ManagedThreadId;
+
+label1.Text = string.Format("Async Thread ID:{0},Current Thread ID:{1},Is UI Thread:{2}",
+asyncThreadID, curThreadID, curThreadID.Equals(mainThreadID));
+});
+
+// 挂起当前线程3秒，模拟耗时操作
+// C代码块
+Thread.Sleep(3000);
+}
+
+　　这段代码在新的线程中访问了UI，所以我们使用了label1.BeginInvoke函数。新的线程中，我们取得了当前工作线程的线程标识符，也取得了BeginInvoke函数内的线程。然后，将它与UI线程的标志符作比对，将结果输出于Label1控件上。最后，我们挂起当前工作线程3秒，用于模拟一些常见的耗时操作。
+
+　　为了便于区分，我们将这段代码分为A、B、C三个代码块。
+
+运行结果：
+
+我们能得到以下结论：
+
+●PrintThreadLog函数主体(A、C代码块)执行在新的线程，它执行了不被BeginInvoke所包含的其他代码。
+●当我们调用了Control.BeginInvoke之后，线程调度权回归到了UI线程。也就是说，BeginInvoke内部的代码(B代码块)均执行在UI线程。
+●在UI线程执行BeginInvok中封装的代码时，工作线程内的剩余代码(C代码块)同时进行。它与BeginInvoke中的UI线程并行执行，互不干扰。
+●由于Thread.Sleep(3000)是隔离在UI线程外的工作线程，因此这行代码带来的线程阻塞实际上阻塞了工作线程，不会给UI带来任何影响。
+
+Control.BeginInvoke的真正含义
+
+　　既然Control.BeginInvoke其中的委托函数仍执行在UI线程内，那这个”异步”到底指的是什么？话题回到本文最初：我们在上文已经提到了”控件的线程安全检测”概念，相信大家对这种工作线程内调用Control.BeginInvoke的做法已经太熟悉了。我们也提到了”CLR不喜欢工作线程调用UI元素”。微软的决心如此之大，以至于CLR团队在.NET Framework2.0中添加了CheckForIllegalCrossThreadCalls和Control.Invoke、Control.BeginInvoke方法。这是一次相当重大的改革，CLR团队希望达到这样的效果：
+
+　　如果不申明CheckForIllegalCrossThreadCalls = false;这样的”不安全”代码，你就只能使用Control.Invoke和Control.BeginInvoke；而只要使用后两者，不论它们的上下文运行环境是其它工作线程还是UI线程，它们封装的代码都会执行在UI线程内。所以，msdn对Control.BeginInvoke给出了这样的解释：在创建控件的基础句柄所在线程上异步执行指定委托。
+
+　　它的真正含义是：BeginInvoke所谓的异步，是相对于调用线程的异步，而不是相对于UI线程的异步。
+
+　　CLR把Control.BeginInvoke(delegate method)中的异步函数执行在UI内，如果你像我上文那样用新线程调用BeginInvoke，那么method相对于这个新线程内的其他函数是异步的。毕竟method执行在了UI线程，新线程立即回调，不必等待Control.BeginInvoke的完成。所以，这个后台线程充分享受了”异步”的好处，不再阻塞，只是我们看不到而已；当然，如果你在BeginInvoke内执行一段耗时的代码，无论是从远程服务器获取数据库资料、IO读取，还是在控件内加载一大批数据，UI线程还是阻塞的。
+
+　　正如传统的Delegate.BeginInvoke的异步工作线程取自于.NET线程池，Control.BeginInvoke的异步工作线程就是UI线程。
+
+　　现在您明白两种BeginInvoke的区别了吗？
+
+Control.Invoke、BeginInvoke与Windows消息
+
+　　实际上，Invoke和BeginInvoke的原理是将调用的方法Marshal成消息，然后调用Win32Api的RegisterWindowMessage()向UI发送消息。我们使用Reflector，可以看到以下代码：
+
+Control.Invoke:
+
+public object Invoke(Delegate method, params object[] args)
+{
+using (new MultithreadSafeCallScope())
+{
+return this.FindMarshalingControl().MarshaledInvoke(this, method, args, true);
+}
+}
+
+Control.BeginInvoke:
+
+[EditorBrowsable(EditorBrowsableState.Advanced)]
+public IAsyncResult BeginInvoke(Delegate method, params object[] args)
+{
+using (new MultithreadSafeCallScope())
+{
+return (IAsyncResult)this.FindMarshalingControl().MarshaledInvoke(this, method, args, false);
+}
+}
+
+　　在以上代码中我们看到Control.Invoke和BeginInvoke的不同之处，在于调用MarshaledInvoke时，Invoke向最后一个参数传递了false，而BeginInvoke则是true。
+
+MarshaledInvoke的结构是这样的：
+
+private object MarshaledInvoke(Control caller, Delegate method, object[] args, bool synchronous)
+
+　　很明显，最后一个参数synchronous表示是否按照同步处理。MarshaledInvoke内部这样处理这个参数：
+
+if (!synchronous)
+{
+return entry;
+}
+if (!entry.IsCompleted)
+{
+this.WaitForWaitHandle(entry.AsyncWaitHandle);
+}
+
+　　所以，BeginInvoke的处理就是直接回调，Invoke却在等待异步函数执行完后，才继续执行。
+
+　　到此为止，Invoke和BeginInvoke的工作就结束了，其余的工作就是UI对消息的处理，它由Control的WndProc(ref Message m)来执行。消息处理到底会给我们的UI带来什么样的影响？接着来看Application.DoEvents()函数。
+
+Application.DoEvents
+
+　　Application.DoEvents()函数是WinForm编程中极为重要的函数，但实际编程中，大多数开发者极少调用它。如果您对这个函数缺乏了解，那很可能会在以后长期的编程中对“窗体假死”这样的现象陷入迷惑。
+
+　　当运行 Windows 窗体时，它将创建新窗体，然后该窗体等待处理事件。该窗体在每次处理事件时，均将处理与该事件关联的所有代码。所有其他事件在队列中等待。当代码处理事件时，应用程序不会响应。例如，如果将甲窗口拖到乙窗口之上，则乙窗口不会重新绘制。
+
+　　如果在代码中调用 DoEvents，则您的应用程序可以处理其他事件。 例如，如果您有向ListBox添加数据的窗体，并将 DoEvents 添加到代码中，那么当将另一窗口拖到您的窗体上时，该窗体将重新绘制。如果从代码中移除 DoEvents，那么在按钮的单击事件处理程序执行结束以前，您的窗体不会重新绘制。
+
+　　因此，如果我们在窗体执行事件时，不处理消息队列中的windows消息，窗体必然会失去响应。而上文已经介绍过，Control.Invoke和BeginInvoke都会向UI发送消息，造成UI对消息的处理，因此，这为我们解决窗体加载大量数据时的假死提供了思路。
+
+解决方案
+
+尝试”无假死”
+
+　　这次我们使用开发中出现频率极高的ListView控件，体验一次理想的”异步刷新”,窗体中有一个ListView控件命名为listView1,并将View设置为Detail，添加两个ColumnHeader；一个Button命名为btn_Start，设计视图如下：
+
+开始code：
+
+private readonly int Max_Item_Count = 10000;
+
+private void button1_Click(object sender, EventArgs e)
+{
+new Thread((ThreadStart)(delegate()
+{
+for (int i = 0; i < Max_Item_Count; i++)
+{
+// 此处警惕值类型装箱造成的"性能陷阱"
+listView1.Invoke((MethodInvoker)delegate()
+{
+listView1.Items.Add(new ListViewItem(new string[]
+{ i.ToString(), string.Format("This is No.{0} item", i.ToString()) }));
+});
+};
+}))
+.Start();
+}
+
+　　代码运行后，你将会看到一个飞速滚动的ListView列表，在加载的过程中，列表以令人眼花缭乱的速度添加数据，此时你尝试拉动滚动条，或者移动窗体，都会发现这次的效果与以往的”白板”、”假死”截然不同！这是一个令人欣喜的变化。
+
+运行过程：
+
+　　从我的截图中可以看出，窗体在加载数据的过程中，依然绘制界面，并没有出现”假死”。
+
+　　如果上述代码调用的是Control.BeginInvoke，程序会发生些奇怪的现象，想想是为什么？
+
+好吧，到了现在，我们终于可以松了一口气了，界面响应的问题已经被解决，一切美好。但是，这样的窗体还是暴漏出两个大问题：
+1． 比起传统加载，”无假死窗体”加载速度明显减慢。
+2． 加载数据过程中，窗体发生剧烈闪烁现象。
+
+问题分析
+
+　　我们在调用Control.Invoke时，强迫窗体处理消息，从而使界面得到了响应，同时也产生了一些副作用。其中之一就是消息处理使得窗体发生了在循环中发生了重绘，”闪烁”现象就是窗体重绘引发的，有过GDI+开发经验的开发者应该比较熟悉。同时，每次调用Invoke都会使UI处理消息，也直接增加了控件对数据处理的时间成本，导致了性能问题。
+
+　　对于”性能问题”，我并没有什么解决方案(有自己见解的朋友欢迎提出)。有些控件(ListView、ListBox)具有BeginUpdate和EndUpdate函数，可以临时挂起刷新，加快性能。但毕竟我们这里创建了一个会滚动的界面，这种数据的”动态加载”方式是前者无法比拟的。
+
+　　对于”闪烁”，我先来解释问题的原因。通常，控件的绘制包括两个环节：擦出原对象与绘制新对象。首先windows发送一个消息，通知控件擦除原图像，然后进行绘制。如果要在控件面板上以SolidBrush绘制，控件就会在其面板上直接绘制内容。当用户改变了控件尺寸，Windows将会调用很多绘制回收操作，当每次回收和绘制发生时，由于”绘制”较”擦除”更为延后，才会给用户带来”闪烁”的感觉。以往我们为解决此类问题，往往需要在Control.WndProc中作出复杂的处理。而.NET Framework为我们提供了更为优雅的一种方案，那就是双缓冲，我们直接调用它即可。
+
+最终方案
+
+1.新建Windows组件DBListView.cs,让它继承自ListView。
+2.在控件中添加如下代码： public DBListView()
+{
+
+
+// 打开控件的双缓冲
+SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
+}
+
+将项目重新生成，然后从工具箱中拖出新增的组建DBListView到窗体上，命名为dbListView1，执行以下代码： private void button1_Click(object sender, EventArgs e)
+{
+new Thread((ThreadStart)(delegate()
+{
+for (int i = 0; i < Max_Item_Count; i++)
+{
+// 此处警惕值类型装箱造成的"性能陷阱"
+dbListView1.Invoke((MethodInvoker)delegate()
+{
+dbListView1.Items.Add(new ListViewItem(new string[]
+{ i.ToString(), string.Format("This is No.{0} item", i.ToString()) }));
+});
+};
+}))
+.Start();
+} >
+
+　　现在”闪烁”的问题是不是已经得到了解决？
+
+ 
+
+    对于DataGridView来说，也是每一行一行的添加，
+
+for (int i = 0; i < Max_Item_Count; i++)
+{
+
+//创建行
+DataGridViewRow dr = new DataGridViewRow();
+foreach (DataGridViewColumn c in dataGridViewAllInfo.Columns)
+{
+dr.Cells.Add(c.CellTemplate.Clone() as DataGridViewCell);
+}
+//累加序号
+dr.Cells[0].Value = i++;
+
+try
+{
+dataGridViewAllInfo.Invoke((MethodInvoker)delegate()
+{
+dataGridViewAllInfo.Rows.Add(dr);
+});
+}
+catch (Exception ex)
+{
+//如果插入出现异常，直接跳出
+return;
+}
+
+}
+
+　　在我们的实际应用中，这种加载数据引起的阻塞是很常见的，在用户对界面性能关注度不高的情况下，使用本文介绍的方式处理这种阻塞是一种不错的选择，如果以类似IE8、迅雷等软件的载入动画配合，效果会更理想。
